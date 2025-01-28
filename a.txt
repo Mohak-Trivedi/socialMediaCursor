@@ -1,0 +1,32 @@
+# Create backend directory structure
+mkdir -p backend/src/{routes,controllers,services,models,config,middleware}
+cd backend
+
+# Initialize package.json
+npm init -y
+
+# Install required dependencies
+npm install express mongoose bcryptjs jsonwebtoken dotenv cors
+
+# Create necessary files
+touch src/config/database.js
+touch src/config/jwt.js
+touch src/middleware/auth.js
+touch .env
+touch src/index.js
+
+# Create frontend project with Vite
+npm create vite@latest frontend -- --template react
+cd frontend
+
+# Install dependencies
+npm install axios react-router-dom @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+# Create directory structure
+mkdir -p src/{components,pages,services,contexts}
+
+# Create necessary files
+touch src/services/api.js
+touch src/contexts/AuthContext.jsx
+touch src/components/{Navbar,PostCard,CreatePostForm}.jsx
+touch src/pages/{Login,Signup,Feed}.jsx
