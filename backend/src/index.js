@@ -14,7 +14,7 @@ app.use(express.json());
 // Connect to MongoDB
 connectDB();
 
-// Routes (we'll add these next)
+// Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/posts", require("./routes/posts"));
 

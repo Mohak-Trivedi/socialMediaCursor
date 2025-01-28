@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Container,
@@ -7,7 +8,6 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
 import { posts } from "../services/api";
 import CreatePostForm from "../components/CreatePostForm";
 import PostCard from "../components/PostCard";

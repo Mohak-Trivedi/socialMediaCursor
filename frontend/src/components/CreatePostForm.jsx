@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import { Box, Button, Textarea, VStack, useToast } from "@chakra-ui/react";
-import { useState } from "react";
 import { posts } from "../services/api";
 
 const CreatePostForm = ({ onPostCreated }) => {

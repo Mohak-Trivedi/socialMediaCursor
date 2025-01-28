@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Box,
   Text,
@@ -8,7 +9,6 @@ import {
   HStack,
   Avatar,
 } from "@chakra-ui/react";
-import { useState } from "react";
 import { posts } from "../services/api";
 import { useAuth } from "../contexts/AuthContext";
 

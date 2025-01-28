@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Flex, Button, Heading } from "@chakra-ui/react";
 import { useAuth } from "../contexts/AuthContext";
 import { Link } from "react-router-dom";

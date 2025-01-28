@@ -15,11 +15,19 @@ touch src/middleware/auth.js
 touch .env
 touch src/index.js
 
-# Create frontend project with Vite
+# Remove existing frontend directory
+rm -rf frontend
+
+# Create a new Vite React project
 npm create vite@latest frontend -- --template react
+
+# Navigate into the project
 cd frontend
 
-# Install dependencies
+# Install base dependencies
+npm install
+
+# Install additional dependencies
 npm install axios react-router-dom @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 # Create directory structure
@@ -30,3 +38,27 @@ touch src/services/api.js
 touch src/contexts/AuthContext.jsx
 touch src/components/{Navbar,PostCard,CreatePostForm}.jsx
 touch src/pages/{Login,Signup,Feed}.jsx
+
+# Remove existing node_modules and package-lock.json
+rm -rf node_modules package-lock.json
+
+# Install dependencies
+npm install
+
+# Install nodemon for development
+npm install nodemon --save-dev
+
+# Start the server
+npm start
+
+# In the frontend directory
+cd frontend
+
+# Remove node_modules and lock file
+rm -rf node_modules package-lock.json
+
+# Reinstall dependencies
+npm install
+
+# Start the development server
+npm run dev
